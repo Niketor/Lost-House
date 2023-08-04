@@ -1,0 +1,23 @@
+.feedback {
+    padding: 180px 0;
+
+    &__title {
+        margin-bottom: 38px;
+    }
+
+    &__form {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 30px;
+        align-items: center;
+
+        @include mediaTablet {
+            grid-template-columns: 1fr;
+            padding: 0 50px;
+        }
+    }
+
+    @include mediaTablet {
+        padding: 120px 0;
+    }
+}

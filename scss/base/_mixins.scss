@@ -1,0 +1,31 @@
+// Numbers
+@mixin decorNumber {
+    overflow: hidden;
+    position: absolute;
+
+    top: 0;
+    z-index: -1;
+    
+    color: $white;
+    opacity: 0.02;
+
+    font-family: $font-accent;
+    font-size: 400px;
+    font-weight: 700;
+    
+    line-height: 1;
+}
+
+// Media
+@mixin mediaTablet {
+    @media screen and (max-width: 959px) {
+        @content;
+    }
+}
+
+@mixin mediaSmart {
+    @media screen and (max-width: 399px) {
+        @content;
+    }
+}
+
