@@ -125,7 +125,7 @@
                         
                         <form action="" class="cta__form form">
                             <input class="form__input" id="name" type="text" placeholder="Ваше имя">
-                            <input class="form__input" id="phone" type="text" placeholder="Ваш телефон">
+                            <input class="form__input" data-tel-input id="phone" type="text" placeholder="Ваш телефон">
                             
                             <p class="form__privacy">
                                 *Мы никому не передаем ваши данные.<br>
@@ -174,7 +174,7 @@
                     </p>
                     
                     <input class="form__input" id="name" type="text" placeholder="Ваше имя">
-                    <input class="form__input" id="phone" type="text" placeholder="Ваш телефон">
+                    <input class="form__input" data-tel-input id="phone" type="text" placeholder="Ваш телефон">
                     
                     <button class="form__btn no-hover-color" type="button">Посмотреть район</button>
                 </form>
@@ -234,7 +234,9 @@
         </div>
     </footer>
 
-    
+    <script src="libs/phoneMask/mask.js"></script>
+    <script src="libs/phoneMask/mask_list.js"></script>
+
     <script src="scrtipts/main.js"></script>
 </body>
 </html>
