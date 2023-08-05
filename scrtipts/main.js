@@ -8,6 +8,29 @@ navBurger.onclick = function () {
     headerTopBlock.classList.toggle('header__top--mobile');
 }
 
+
+// Scroll Btn
+const benefitsScrollBtn = document.querySelector('.header__btn');
+const benefitsElement = document.querySelector('.benefits');
+scroollToElement(benefitsScrollBtn, benefitsElement);
+
+const mapScrollBtn = document.querySelector('#mapLink');
+const mapScrollBtn2 = document.querySelector('#mapLink2');
+const mapElement = document.querySelector('.section__map');
+scroollToElement(mapScrollBtn, mapElement);
+scroollToElement(mapScrollBtn2, mapElement);
+
+
+function scroollToElement (btn, element) {
+	btn.onclick = () => {
+		const scrollCount = element.getBoundingClientRect().top + window.scrollY;
+		window.scroll({top: scrollCount, behavior: "smooth"});
+	}
+}
+
+
+
+
 // phoneMask
 mask('[data-tel-input]');
 
@@ -22,7 +45,7 @@ phoneMask.forEach(element => {
     })
 });
 
-/* Yandex Map */
+// Yandex Map
 
 // Функция ymaps.ready() будет вызвана, когда
 // загрузятся все компоненты API, а также когда будет готово DOM-дерево.

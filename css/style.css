@@ -478,10 +478,10 @@ h2 {
   }
 }
 
-.appartments {
+.apartments {
   position: relative;
 }
-.appartments::before {
+.apartments::before {
   content: "III";
   right: calc(50% + 555px);
   transform: translate(50%, 0);
@@ -497,22 +497,22 @@ h2 {
   line-height: 1;
 }
 
-.appartments__title {
+.apartments__title {
   margin-bottom: 88px;
 }
 @media screen and (max-width: 959px) {
-  .appartments__title {
+  .apartments__title {
     margin-bottom: 54px;
   }
 }
 
-.appartments__cards {
+.apartments__cards {
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 30px;
 }
 @media screen and (max-width: 959px) {
-  .appartments__cards {
+  .apartments__cards {
     grid-template-columns: repeat(auto-fit, minmax(290px, 1fr));
   }
 }

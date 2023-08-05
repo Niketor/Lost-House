@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Lost House</title>
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="libs/youtubeLightbox/youtubeLightbox.css">
 </head>
 <body>
     <header class="header">
@@ -41,7 +42,7 @@
                 </button>
             </div>
             <div class="header__footer">
-                <button class=" info info--map">Наб. реки Фонтанки 10-15</button>
+                <button id="mapLink" class="info info--map">Наб. реки Фонтанки 10-15</button>
                 
                 <a href="tel:+78121234567" class="info info--tel">8 (812) 123-45-67</a>
             </div>
@@ -85,13 +86,13 @@
                 </div>
             </section>
             
-            <section class="appartments">
+            <section class="apartments">
                 <div class="container">
-                    <h2 class="appartments__title title_2">
+                    <h2 class="apartments__title title_2">
                         Наши квартиры
                     </h2>
                     
-                    <div class="appartments__cards">
+                    <div class="apartments__cards">
                         <a href="#" class="card no-hover-color">
                             <img src="img/main/card/01.jpg" alt="Penthouse “Loft Olimp”" class="card__img">
                             <p class="card__title" >Пентхаус “Loft Олимп”</p>
@@ -141,7 +142,7 @@
         <section class="video">
             <div class="container">
                 <div class="video__wrapper">
-                    <a href="#" class="video__link">
+                    <a href="https://www.youtube.com/watch?v=-YAzSex8zIo&t=16825s" data-youtubeLightbox class="video__link">
                         <img src="img/main/video/preview.jpg" alt="Video" class="video__img">
                         <img src="img/main/video/icon.svg" alt="Video icon" class="video__icon">
                     </a>
@@ -217,7 +218,7 @@
                 <div class="footer__adress">
                     <nav class="nav">
                         <ul>
-                            <li><a href="#map">Адрес: Наб. реки Фонтанки 10-15</a></li>
+                            <li><button id="mapLink2">Адрес: Наб. реки Фонтанки 10-15</button></li>
                             <li><a href="tel:+78121234567">Телефон: 8 (812) 123-45-67</a></li>
                             <li><a href="#">Отдел продаж: 10:00 - 20:00</a></li>
                             <li><a href="mailto:vip@lofthouse.ru">E-mail: <span>vip@lofthouse.ru</span></a></li>
@@ -235,11 +236,21 @@
         </div>
     </footer>
 
+    <div id="youtubelightbox" class="youtubelightbox">
+        <div class="youtubelightbox__centeredchild">
+            <div class="youtubelightbox__videowrapper">
+                <div id="youtubelightboxPlayer"></div>
+            </div>
+        </div>
+    </div>
+
     <script src="https://api-maps.yandex.ru/2.1/?apikey=4f537583-9ef9-4998-a98b-9a6ee160a9d3&lang=ru_RU" type="text/javascript">
     </script>
 
     <script src="libs/phoneMask/mask.js"></script>
     <script src="libs/phoneMask/mask_list.js"></script>
+
+    <script src="libs/youtubeLightbox/youtubeLightbox.js"></script>
 
     <script src="scrtipts/main.js"></script>
 </body>

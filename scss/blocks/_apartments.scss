@@ -1,4 +1,4 @@
-.appartments {
+.apartments {
     position: relative;
 
     &::before {
@@ -11,7 +11,7 @@
     }
 }
 
-.appartments__title {
+.apartments__title {
     margin-bottom: 88px;
 
     @include mediaTablet {
@@ -19,7 +19,7 @@
     }
 }
 
-.appartments__cards {
+.apartments__cards {
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 30px;
