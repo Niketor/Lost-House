@@ -23,8 +23,7 @@ scroollToElement(mapScrollBtn2, mapElement);
 
 function scroollToElement (btn, element) {
 	btn.onclick = () => {
-		const scrollCount = element.getBoundingClientRect().top + window.scrollY;
-		window.scroll({top: scrollCount, behavior: "smooth"});
+		element.scrollIntoView({ behavior: 'smooth' });
 	}
 }
 
